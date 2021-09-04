@@ -229,37 +229,37 @@
 // we can change whatever we want when firing off an event
 // just like we were doing when grabbing elements to manipulate
 // them
-document.querySelector('.clear-tasks').addEventListener('click',
-function(e) {
-    let val;
+// document.querySelector('.clear-tasks').addEventListener('click',
+// function(e) {
+//     let val;
 
-    val = e;
+//     val = e;
 
-    // Event target element
-    val = e.target;
-    val = e.target.id;
-    val = e.target.className;
-    val = e.target.classList;
+//     // Event target element
+//     val = e.target;
+//     val = e.target.id;
+//     val = e.target.className;
+//     val = e.target.classList;
 
-    // Event type
-    val = e.type;
+//     // Event type
+//     val = e.type;
 
-    // timestamp
-    val = e.timeStamp;
+//     // timestamp
+//     val = e.timeStamp;
 
-    // coordinates of event relative to the window
-    val = e.clientY;
-    val = e.clientX;
+//     // coordinates of event relative to the window
+//     val = e.clientY;
+//     val = e.clientX;
 
-      // coordinates of event relative to the element
-      val = e.offsetY;
-      val = e.offsetX;
+//       // coordinates of event relative to the element
+//       val = e.offsetY;
+//       val = e.offsetX;
 
-    // change the innerText of the button upon click
-    e.target.innerText = 'helloish';
+//     // change the innerText of the button upon click
+//     e.target.innerText = 'helloish';
 
-    console.log(val);
-});
+//     console.log(val);
+// });
 
 // logging the event, target is the most important thing to 
 // take notice of; this is where the event happened on the page
