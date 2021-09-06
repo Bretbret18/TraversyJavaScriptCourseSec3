@@ -1,10 +1,11 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Commented out 'Materialize' style sheet to see select list -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
     crossorigin="anonymous">
@@ -29,12 +30,22 @@
           <div class="card-content">
             <span class="card-title">Task List</span>
             <div class="row">
-              <form id="task-form">
+              <!-- action="index.php" was placed in form during
+              Keyboard and Input Events -->
+              <form id="task-form" action="index.php">
                 <div class="input-field col s12">
+                  <!-- input value="walk the dog" was cut -->
                   <input type="text" name="task" id="task"
-                   value="Walk the dog">
+                   value="">
                   <label for="task">New Task</label>
                 </div>
+                <!-- NOTE: Would have to use some jquery
+                to be able to see the select list -->
+                <!-- <select>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                </select> -->
             </div>
             <input type="submit" value="Add Task" 
             class="btn">
@@ -95,4 +106,4 @@
 </body>
 
 </html>
-    
+     
